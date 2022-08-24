@@ -1,0 +1,25 @@
+
+# ====================CONFIG THIS =============================== #
+export COLOR_01="#000000"
+export COLOR_02="{red}"
+export COLOR_03="{green}"
+export COLOR_04="{yellow}"
+export COLOR_05="{blue}"
+export COLOR_06="{magenta}"
+export COLOR_07="{blue-alt}"
+export COLOR_08="{grey1}"
+
+export COLOR_09="{grey2}"
+export COLOR_10="{red}"
+export COLOR_11="{green}"
+export COLOR_12="{yellow}"
+export COLOR_13="{blue}"
+export COLOR_14="{magenta}"
+export COLOR_15="{blue-alt}"
+export COLOR_16="#FFFEFE"
+
+export BACKGROUND_COLOR="{background}"
+export FOREGROUND_COLOR="{grey2}"
+export CURSOR_COLOR="{grey2}"
+export PROFILE_NAME="{name}"
+# =============================================================== #

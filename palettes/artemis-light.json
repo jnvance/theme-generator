@@ -1,0 +1,30 @@
+{
+    "name": "Artemis Light",
+
+    "background": "#F0F0F0",
+    "selection-background": "#ADD6FF",
+    "search-background": "#F79346",
+    "strong-background": "#FAFAFA",
+
+    "foreground": "#363636",
+
+    "grey1": "#3e4451",
+    "grey2": "#5c6370",
+    "grey3": "#b0b5bf",
+
+    "blue": "#055FAA",
+    "blue-alt": "#238E9C",
+    "blue-light": "#b6ccff",
+
+    "green": "#347A54",
+    "green-alt": "#789353",
+
+    "yellow": "#A37000",
+    "yellow-alt": "#e5c07b",
+
+    "magenta": "#74009E",
+
+    "red": "#B12727",
+    "red-alt": "#be5046",
+    "red-light": "#ffb6cc"
+}

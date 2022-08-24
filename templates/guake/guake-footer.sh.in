@@ -1,0 +1,39 @@
+UUIDGEN="${UUIDGEN:-$(command -v uuidgen | xargs echo)}"
+DCONF="${DCONF:-$(command -v dconf | xargs echo)}"
+GCONF="${GCONF:-$(command -v gconftool-2 | xargs echo)}"
+GS="${GS:-$(command -v gsettings | xargs echo)}"
+
+dset() {
+  local key="${1}"; shift
+  local val="${1}"
+
+  "${DCONF}" write "${PROFILE_KEY}/${key}" "${val}"
+}
+
+apply_guake() {
+  # |
+  # | Applying values to guake
+  # | ===========================================
+
+  local legacy="${1:-}"
+  PROFILE_KEY="/apps/guake/style/font"
+
+  if [[ -z "${legacy}" ]]; then
+    dset palette              "'${COLOR_01}:${COLOR_02}:${COLOR_03}:${COLOR_04}:${COLOR_05}:${COLOR_06}:${COLOR_07}:${COLOR_08}:${COLOR_09}:${COLOR_10}:${COLOR_11}:${COLOR_12}:${COLOR_13}:${COLOR_14}:${COLOR_15}:${COLOR_16}:${FOREGROUND_COLOR}:${BACKGROUND_COLOR}'"
+    dset palette-name         "'${PROFILE_NAME}'"
+    dset allow-bold 'true'
+  else
+    gcset string color        "${FOREGROUND_COLOR}"
+    gcset string palette      "${COLOR_01}:${COLOR_02}:${COLOR_03}:${COLOR_04}:${COLOR_05}:${COLOR_06}:${COLOR_07}:${COLOR_08}:${COLOR_09}:${COLOR_10}:${COLOR_11}:${COLOR_12}:${COLOR_13}:${COLOR_14}:${COLOR_15}:${COLOR_16}"
+    gcset string palette-name "${PROFILE_NAME}"
+    PROFILE_KEY="/apps/guake/style/background"
+    gcset string color        "${BACKGROUND_COLOR}"
+
+  fi
+}
+
+if [[ -n "$(${DCONF} list /apps/guake/style/)" ]]; then
+    apply_guake
+else
+    apply_guake legacy
+fi

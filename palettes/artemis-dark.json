@@ -1,0 +1,30 @@
+{
+    "name": "Artemis Dark",
+
+    "background": "#282C34",
+    "selection-background": "#044377",
+    "search-background": "#37636c",
+    "strong-background": "#23272E",
+
+    "foreground": "#d7dae0",
+
+    "grey1": "#b0b5bf",
+    "grey2": "#848B9A",
+    "grey3": "#3e4451",
+
+    "blue": "#61afef",
+    "blue-alt": "#56b6c2",
+    "blue-light": "#D6E2FF",
+
+    "green": "#89ca78",
+    "green-alt": "#a2d26c",
+
+    "yellow": "#d19a66",
+    "yellow-alt": "#e5c07b",
+
+    "magenta": "#d55fde",
+
+    "red": "#ef596f",
+    "red-alt": "#99524C",
+    "red-light": "#ffd6e2"
+}

@@ -19,7 +19,7 @@ export COLOR_15="{blue-alt}"
 export COLOR_16="#FFFEFE"
 
 export BACKGROUND_COLOR="{background}"
-export FOREGROUND_COLOR="{grey2}"
+export FOREGROUND_COLOR="{grey1}"
 export CURSOR_COLOR="{grey2}"
 export PROFILE_NAME="{name}"
 # =============================================================== #
